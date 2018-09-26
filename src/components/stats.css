@@ -1,0 +1,71 @@
+.Rankings div {
+    padding: 5px
+}
+
+.Rankings :nth-child(1) {
+    font-weight: 600;
+}
+.Rankings > :nth-child(even) {
+    background: rgb(240,240,240);
+}
+
+.Stats__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Rank {
+    width: 17px;
+    height: 17px;
+    background: transparent;
+    border: solid 2px transparent;
+}
+
+@media screen and (orientation: portrait) {
+    .AdvancedStat {
+         display: none;
+
+    }
+    .Header{
+        display: none;
+    }
+    .Stats__row:nth-of-type(2) .Rank {
+        background: gold;
+        border: solid 2px black;
+        border-radius: 50%;
+    }
+    
+    .Stats__row:nth-of-type(3) .Rank {
+        background: rgb(241, 231, 231);
+        border: solid 2px black;
+        border-radius: 50%;
+    }
+    .Stats__row:nth-of-type(4) .Rank {
+        background:#CD7F32;
+        border: solid 2px black;
+        border-radius: 50%;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    .Stats__row > div, .Header > div {
+        flex: 1;
+    }
+    
+    .Stats__row .ExtraFlex, .Header .ExtraFlex  {
+        flex: 4;
+        justify-content: flex-start;
+        text-align: left;
+    }
+    .Header{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .Header div {
+        align-self: center;
+    }
+}
+
+
+

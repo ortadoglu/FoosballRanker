@@ -1,0 +1,18 @@
+.MainBody .material-icons {
+    padding-left: 5px;
+}
+
+.MainBody {
+    padding: 0px 5px;
+    overflow-y: auto;
+}
+
+
+@media screen and (orientation: landscape) {
+  .TeamsContainer {
+    background: url(../img/table.png) no-repeat center;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+

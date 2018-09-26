@@ -1,0 +1,16 @@
+.Player {
+    margin: 10px;
+}
+
+.Player button {
+    height: 20px;
+}
+
+.NewPlayer {
+    display: flex;
+    flex-direction: column;
+}
+
+.NewPlayer div {
+    margin-bottom: 5px;
+}

@@ -1,0 +1,30 @@
+.team {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+.team img {
+    width: 60px;
+    height: 60px;
+ }
+
+.transparent {
+    opacity: 0.1;
+  }
+.transparent.ish {
+    opacity: 1;
+}
+
+@media screen and (orientation: portrait) {
+
+}
+
+@media screen and (orientation: landscape) {
+    .team {
+        flex-direction: column;
+    }
+    .team img:first-of-type {
+        display: none;
+    }
+}
