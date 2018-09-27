@@ -23,23 +23,29 @@ html, #root, body {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+  background-color: #f2f2f2;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-  margin: 20px;
+.App-header {
+	background-image: url(./img/banner.png);
+	background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+@media screen and (orientation: portrait) {
+  .App-header {
+	height: 30%;
+	background-size: 100% 100%;
+  }
 }
 
 @media screen and (orientation: landscape) {
-  .App-header {
-    display: none
+	.App-header {
+	  height: 15%;
+	  background-size: contain;
+	}
   }
-}
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
 
 .BottomSelector {
   border-top: solid 1px #3F51B5;

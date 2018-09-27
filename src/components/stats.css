@@ -6,7 +6,7 @@
     font-weight: 600;
 }
 .Rankings > :nth-child(even) {
-    background: rgb(240,240,240);
+    background: rgb(182, 182, 182)
 }
 
 .Stats__row {
