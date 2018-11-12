@@ -2,7 +2,7 @@
 
 # dependencies
 /node_modules
-/.firebasegit
+/.firebase
 package-lock.json
 
 # testing
