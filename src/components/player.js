@@ -5,10 +5,6 @@ import IconButton from '@material-ui/core/IconButton';
 import CompareIcon from '@material-ui/icons/CompareArrows';
 
 class Player extends Component {
-  static defaultProps = {
-    name: 'stranger',
-    mmr: 'under9000'
-  }
   render() {
     return (
       <div className="Player">

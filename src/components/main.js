@@ -112,10 +112,11 @@ class MainBody extends Component {
     return (
       <div className="MainBody">
         {this.props.displayMode === 0 &&
-          <div>
+          <div className="MainBodyContainer">
             <div className="TeamsContainer">
               <Team teamNo={0} player1={this.state.players[0]} player2={this.state.players[1]} setAsWinner={() => this.setWinner(1)} isWinner={this.state.winningTeam === 1} setPlayer={this.setPlayer} />
-              <Team teamNo={1} player1={this.state.players[2]} player2={this.state.players[3]} setAsWinner={() => this.setWinner(2)} isWinner={this.state.winningTeam === 2} setPlayer={this.setPlayer} />
+			  <div className="FoosTable"></div>
+			  <Team teamNo={1} player1={this.state.players[2]} player2={this.state.players[3]} setAsWinner={() => this.setWinner(2)} isWinner={this.state.winningTeam === 2} setPlayer={this.setPlayer} />
             </div>
             <Button variant="contained" color="primary" onClick={this.recalculateRatings} >
               team {this.state.winningTeam} wins!

@@ -1,6 +1,6 @@
 import * as firebase from 'firebase';
 
-const env = "test";
+const env = "public";
 
 const getPlayers = (updateFunction) => {
 	firebase.database().ref(env + '/')
@@ -21,8 +21,7 @@ const addPlayer = (player) => {
 	}, function (error) {
 		if (error) {
 			alert("Data could not be saved." + error);
-		} else {
-		}
+		} else { }
 	});
 }
 
@@ -44,9 +43,7 @@ const useThisToBackupDB = (player) => {
 		.set(player, function (error) {
 			if (error) {
 				alert("Data could not be updated." + error);
-			} else {
-
-			}
+			} else { }
 		});
 }
 
@@ -57,10 +54,8 @@ const saveToLogs = (players, winner) => {
 	firebase.database().ref(env + 'logs/'+ date+'/'+ time)
 		.set(match, function (error) {
 			if (error) {
-				alert("Data could not be updated." + error);
-			} else {
-
-			}
+				alert("Data could not be saved." + error);
+			} else { }
 		});
 }
 

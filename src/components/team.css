@@ -1,9 +1,10 @@
 .team {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 5px;
+	display: flex;
+	flex:2;
+	flex-direction: column;
+	justify-content: space-evenly;
   }
+  
 .team img {
     width: 60px;
     height: 60px;
@@ -14,17 +15,4 @@
   }
 .transparent.ish {
     opacity: 1;
-}
-
-@media screen and (orientation: portrait) {
-
-}
-
-@media screen and (orientation: landscape) {
-    .team {
-        flex-direction: column;
-    }
-    .team img:first-of-type {
-        display: none;
-    }
 }
